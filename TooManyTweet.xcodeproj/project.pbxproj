@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4167E3A2149B116F00222F3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4167E3A1149B116F00222F3F /* UIKit.framework */; };
+		4167E3A4149B116F00222F3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4167E3A3149B116F00222F3F /* Foundation.framework */; };
+		4167E3A6149B116F00222F3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4167E3A5149B116F00222F3F /* CoreGraphics.framework */; };
+		4167E3AC149B116F00222F3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4167E3AA149B116F00222F3F /* InfoPlist.strings */; };
+		4167E3AE149B116F00222F3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167E3AD149B116F00222F3F /* main.m */; };
+		4167E3B2149B116F00222F3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167E3B1149B116F00222F3F /* AppDelegate.m */; };
+		4167E3B5149B116F00222F3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167E3B4149B116F00222F3F /* ViewController.m */; };
+		4167E3B8149B116F00222F3F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4167E3B6149B116F00222F3F /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4167E39D149B116F00222F3F /* TooManyTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooManyTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4167E3A1149B116F00222F3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4167E3A3149B116F00222F3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4167E3A5149B116F00222F3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4167E3A9149B116F00222F3F /* TooManyTweet-Info.plist */ = {isa = PBXFileReference; path = "TooManyTweet-Info.plist"; sourceTree = "<group>"; };
+		4167E3AB149B116F00222F3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4167E3AD149B116F00222F3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4167E3AF149B116F00222F3F /* TooManyTweet-Prefix.pch */ = {isa = PBXFileReference; path = "TooManyTweet-Prefix.pch"; sourceTree = "<group>"; };
+		4167E3B0149B116F00222F3F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4167E3B1149B116F00222F3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4167E3B3149B116F00222F3F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		4167E3B4149B116F00222F3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4167E3B7149B116F00222F3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4167E39A149B116F00222F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4167E3A2149B116F00222F3F /* UIKit.framework in Frameworks */,
+				4167E3A4149B116F00222F3F /* Foundation.framework in Frameworks */,
+				4167E3A6149B116F00222F3F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4167E392149B116E00222F3F = {
+			isa = PBXGroup;
+			children = (
+				4167E3A7149B116F00222F3F /* TooManyTweet */,
+				4167E3A0149B116F00222F3F /* Frameworks */,
+				4167E39E149B116F00222F3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4167E39E149B116F00222F3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4167E39D149B116F00222F3F /* TooManyTweet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4167E3A0149B116F00222F3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4167E3A1149B116F00222F3F /* UIKit.framework */,
+				4167E3A3149B116F00222F3F /* Foundation.framework */,
+				4167E3A5149B116F00222F3F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4167E3A7149B116F00222F3F /* TooManyTweet */ = {
+			isa = PBXGroup;
+			children = (
+				4167E3B0149B116F00222F3F /* AppDelegate.h */,
+				4167E3B1149B116F00222F3F /* AppDelegate.m */,
+				4167E3B3149B116F00222F3F /* ViewController.h */,
+				4167E3B4149B116F00222F3F /* ViewController.m */,
+				4167E3B6149B116F00222F3F /* ViewController.xib */,
+				4167E3A8149B116F00222F3F /* Supporting Files */,
+			);
+			path = TooManyTweet;
+			sourceTree = "<group>";
+		};
+		4167E3A8149B116F00222F3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4167E3A9149B116F00222F3F /* TooManyTweet-Info.plist */,
+				4167E3AA149B116F00222F3F /* InfoPlist.strings */,
+				4167E3AD149B116F00222F3F /* main.m */,
+				4167E3AF149B116F00222F3F /* TooManyTweet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4167E39C149B116F00222F3F /* TooManyTweet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4167E3BB149B116F00222F3F /* Build configuration list for PBXNativeTarget "TooManyTweet" */;
+			buildPhases = (
+				4167E399149B116F00222F3F /* Sources */,
+				4167E39A149B116F00222F3F /* Frameworks */,
+				4167E39B149B116F00222F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TooManyTweet;
+			productName = TooManyTweet;
+			productReference = 4167E39D149B116F00222F3F /* TooManyTweet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4167E394149B116E00222F3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = none;
+			};
+			buildConfigurationList = 4167E397149B116E00222F3F /* Build configuration list for PBXProject "TooManyTweet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4167E392149B116E00222F3F;
+			productRefGroup = 4167E39E149B116F00222F3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4167E39C149B116F00222F3F /* TooManyTweet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4167E39B149B116F00222F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4167E3AC149B116F00222F3F /* InfoPlist.strings in Resources */,
+				4167E3B8149B116F00222F3F /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4167E399149B116F00222F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4167E3AE149B116F00222F3F /* main.m in Sources */,
+				4167E3B2149B116F00222F3F /* AppDelegate.m in Sources */,
+				4167E3B5149B116F00222F3F /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4167E3AA149B116F00222F3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4167E3AB149B116F00222F3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4167E3B6149B116F00222F3F /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4167E3B7149B116F00222F3F /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4167E3B9149B116F00222F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4167E3BA149B116F00222F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4167E3BC149B116F00222F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TooManyTweet/TooManyTweet-Prefix.pch";
+				INFOPLIST_FILE = "TooManyTweet/TooManyTweet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4167E3BD149B116F00222F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TooManyTweet/TooManyTweet-Prefix.pch";
+				INFOPLIST_FILE = "TooManyTweet/TooManyTweet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4167E397149B116E00222F3F /* Build configuration list for PBXProject "TooManyTweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4167E3B9149B116F00222F3F /* Debug */,
+				4167E3BA149B116F00222F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4167E3BB149B116F00222F3F /* Build configuration list for PBXNativeTarget "TooManyTweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4167E3BC149B116F00222F3F /* Debug */,
+				4167E3BD149B116F00222F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4167E394149B116E00222F3F /* Project object */;
+}
