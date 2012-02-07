@@ -22,33 +22,56 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self initEasyTweet];
+    flg = [NSNumber numberWithInt:0];
+
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (void)initEasyTweet {
+    // Set up the built-in twitter composition view controller.
+    tweetViewController = [[TWTweetComposeViewController alloc] init];
+    __weak ViewController *weakSelf = self;
+
+    // Set the initial tweet text. See the framework for additional properties that can be set.    
+    // Create the completion handler block.    
+    [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
+        NSNumber*  tmp;
+        switch (result) {
+            case TWTweetComposeViewControllerResultCancelled:
+                // The cancel button was tapped.
+                tmp = [NSNumber numberWithInt:0];
+                break;
+            case TWTweetComposeViewControllerResultDone:
+                tmp = [NSNumber numberWithInt:1];
+                // The tweet was sent.
+                break;
+            default:
+                tmp = [NSNumber numberWithInt:0];
+                break;
+        }
+        
+        
+        // Dismis   s the tweet composition view controller.
+        [weakSelf dismissModalViewControllerAnimated:YES];
+        [weakSelf performSelectorOnMainThread:@selector(next:) withObject:tmp waitUntilDone:NO];
+    }];
+    
+    // Present the tweet composition view controller modally.
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+-(void)next:(NSNumber*)tmp{
+}
+
+-(IBAction)sendManyTweet:(id)sender{
+    [tweetViewController setInitialText:[NSString stringWithFormat:@"%@ ",[footer text]]];
+    [self presentModalViewController:tweetViewController animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-}
+    [footer becomeFirstResponder];
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

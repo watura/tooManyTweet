@@ -15,6 +15,7 @@
 		4167E3B2149B116F00222F3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167E3B1149B116F00222F3F /* AppDelegate.m */; };
 		4167E3B5149B116F00222F3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167E3B4149B116F00222F3F /* ViewController.m */; };
 		4167E3B8149B116F00222F3F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4167E3B6149B116F00222F3F /* ViewController.xib */; };
+		4167E3BF149B12CB00222F3F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4167E3BE149B12CB00222F3F /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		4167E3A1149B116F00222F3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4167E3A3149B116F00222F3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4167E3A5149B116F00222F3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4167E3A9149B116F00222F3F /* TooManyTweet-Info.plist */ = {isa = PBXFileReference; path = "TooManyTweet-Info.plist"; sourceTree = "<group>"; };
+		4167E3A9149B116F00222F3F /* TooManyTweet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TooManyTweet-Info.plist"; sourceTree = "<group>"; };
 		4167E3AB149B116F00222F3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4167E3AD149B116F00222F3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4167E3AF149B116F00222F3F /* TooManyTweet-Prefix.pch */ = {isa = PBXFileReference; path = "TooManyTweet-Prefix.pch"; sourceTree = "<group>"; };
-		4167E3B0149B116F00222F3F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4167E3AF149B116F00222F3F /* TooManyTweet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TooManyTweet-Prefix.pch"; sourceTree = "<group>"; };
+		4167E3B0149B116F00222F3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4167E3B1149B116F00222F3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4167E3B3149B116F00222F3F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		4167E3B3149B116F00222F3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4167E3B4149B116F00222F3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4167E3B7149B116F00222F3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		4167E3BE149B12CB00222F3F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4167E3BF149B12CB00222F3F /* Twitter.framework in Frameworks */,
 				4167E3A2149B116F00222F3F /* UIKit.framework in Frameworks */,
 				4167E3A4149B116F00222F3F /* Foundation.framework in Frameworks */,
 				4167E3A6149B116F00222F3F /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		4167E392149B116E00222F3F = {
 			isa = PBXGroup;
 			children = (
+				4167E3BE149B12CB00222F3F /* Twitter.framework */,
 				4167E3A7149B116F00222F3F /* TooManyTweet */,
 				4167E3A0149B116F00222F3F /* Frameworks */,
 				4167E39E149B116F00222F3F /* Products */,
@@ -195,6 +199,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wataru Nishimoto (B3S79U9CEE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -210,6 +215,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "D991B1E4-187F-467E-AD38-F33EC6E8B039";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -220,6 +226,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wataru Nishimoto (B3S79U9CEE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -229,6 +236,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D991B1E4-187F-467E-AD38-F33EC6E8B039";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
